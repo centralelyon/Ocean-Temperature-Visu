@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Minimal HTML head elements -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="jquery-ui.css"/>
+    <meta charset="utf-8" />
+    <title>Ocean Temperature Data Visualisation</title>
+  </head>
+  <body>
+    <!-- Title of the page -->
+
+    <!-- Empty placeholders -->
+    <button id="idParam">Paramètres</button>
+    <button id="idDescri">Description</button>
+    <div class = "welcome">Bienvenue, cliquer dans le coin supérieur droit pour commencer.</div>
+
+    <div id="dialog" style="display: none;" title="Paramètres">
+      <div id="menu">
+        <div id="StartCo"></div>
+        <div id="Update"></div>
+        <div id="ColorScaleChose"></div>
+        <div id="Reverse"></div>
+        <div id="DynScale"></div>
+        <div id="nw"></div>
+        <div id="nr"></div>
+        <div id="nr2"></div>
+        <div id="nh"></div>
+        <div id="Nwidthmult"></div>
+        <div id="menu_change">
+          <div id="ChangeParam"></div>
+          <div id="ChangeRatio"></div>
+          <div id="ChangeRatio2"></div>
+        </div>
+        <div id="menu_config">
+          <div id="Laptop" style="display: none;"></div>
+          <div id="Amigo" onclick="test" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="dialog2" style="display: none;" title="Descriptions">
+      <div id = "placeTitle"></div>
+      <div id = "placeDescription"></div>
+    </div>
+
+    <!-- Empty placeholders -->
+  
+    <div id="VOne">
+      <div id="legendzoomed2" class="colorbar"></div>
+      <div id="Fzoom2"></div>
+    </div>
+    <div class="blanc"></div>
+    <div id="Vtwo">
+      <!--<div id="labelzoom2"></div>-->
+      <div id="legendzoomed" class="colorbar"></div>
+      <div id="Fzoom"></div>
+    </div>
+    <div class="blanc"></div>
+    <div id="Vthree">
+      <!--<div id="labelzoom"></div>-->
+      <div id="legendbrushable" class="colorbar"></div>
+      <div id="Fbrushable"></div>
+    </div>
+
+    <!-- JavaScript code to fill the empty placeholders with notebook cells
+         Note that the script is not vanilla JavaScript but an ES module
+         (type="module")
+      -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

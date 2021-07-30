@@ -1,0 +1,191 @@
+
+    .welcome{
+      position: absolute;
+      margin: auto;
+      text-align: center;
+      font-size: 5em;
+      margin-top: 40vh;
+      transform: translateX(-50%);
+      margin-left: 50vw;
+
+    }
+    .connector{
+      stroke-width:3;
+      stroke:#000!important
+    }
+    .connector-end{
+      stroke-width: 5;
+      stroke:#000!important;
+      fill:#000!important;
+    }
+    .selection {
+      fill-opacity: 0.5;
+      fill: black;
+
+    }
+
+    #idParam {
+      position: absolute;
+      width: 50px;
+      height: 300px;
+      left: 100%;
+      margin-left: -50px;
+      background: transparent;
+      border: none !important;
+      font-size: 0;
+      z-index: 100
+    }
+
+    #idDescri {
+      position: absolute;
+      width: 50px;
+      height: 300px;
+      left: 100%;
+      top: 100%;
+      margin-top: -300px;
+      margin-left: -50px;
+      background: transparent;
+      border: none !important;
+      font-size: 0;
+      z-index: 100
+    }
+
+    #menu {
+      position: absolute;
+      z-index: 2;
+    }
+
+    #Fbrushable {
+      margin: auto;
+      min-height: 200px;
+    }
+
+    #Fzoom {
+      margin: auto;
+      min-height: 200px;
+    }
+
+    #Fzoom2 {
+      margin: auto;
+      min-height: 200px;
+    }
+
+    .svg-plot {
+      z-index: 2;
+      position: absolute;
+    }
+
+    .canvas-plot {
+      z-index: 0;
+      position: absolute;
+      image-rendering: pixelated;
+    }
+
+    .brushable-container {
+      height: inherit;
+    }
+
+    .zoomed-container {
+      height: inherit
+    }
+
+    .zoomed2-container {
+      height: inherit
+    }
+
+    .colorbar {
+      position: absolute;
+    }
+
+    #menu_config * {
+      display: inline;
+    }
+
+    #menu_change {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    #menu_change * {
+      display: inline;
+    }
+
+    #menu * {
+      text-align: center;
+      margin-left: 10%;
+      margin-top: 1%;
+    }
+
+    input[type="range"] {
+      width: 300px!important;
+      min-width: 300px!important;
+    }
+
+    input[type="number"] {
+      min-width: 100px!important;
+      width: 100px!important;
+    }
+
+    select[name="input"] {
+      width: 150px!important;
+    }
+
+    div.tooltip {
+      position: absolute;
+      display: inline-block;
+      padding: 10px;
+      font-family: 'Open Sans'sans-serif;
+      color: #000;
+      background-color: #fff;
+      border: 1px solid #999;
+      border-radius: 2px;
+      pointer-events: none;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    @media screen and (min-width:10000px) {
+      .blanc{
+        height: 10px;
+      }
+      #menu * {
+        transform: scale(1.5);
+        text-align: center;
+        margin-left: 25%;
+        margin-top: 20%;
+      }
+
+      .legendfont {
+        font-size: 40px;
+      }
+
+      input[type="range"] {
+        width: 100px ;
+        min-width: 100px;
+      }
+
+      input[type="number"] {
+        min-width: 100px;
+        width: 100px;
+      }
+
+      select[name="input"] {
+        width: 200px;
+      }
+
+      div.tooltip {
+        position: absolute;
+        display: inline-block;
+        padding: 10px;
+        font-size: 40px;
+        font-family: 'Open Sans'sans-serif;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #999;
+        border-radius: 2px;
+        pointer-events: none;
+        opacity: 0;
+        z-index: 1;
+      }
+
+    }
