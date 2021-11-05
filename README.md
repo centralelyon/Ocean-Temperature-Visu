@@ -1,39 +1,42 @@
 # OceanTVisu
-**Prérequis** :  
+**Description**:
+This tool is an interactive visualization tool for large volumes of temporal data of temperature measured in deep waters around the world in order to analyze them on a computer or on a wall screen. 
+The visualization is composed of 3 different views representing the dataset at different scales of temporal zoom. One view presents the data as a surface with x-axis as time, y-axis as depth and intensity as temperatures. The intensity colors follow a color scale that can be changed in the application.
+**Prerequisite**:  
 - Python : https://www.python.org/downloads/
-- Plusieurs modules pythons à installer (Flask,Flask-socketio,eventlet,...)
+- Several python modules to install (Flask,Flask-socketio,eventlet,...)
 - Npm : https://nodejs.org/en/download/
-- Le fichier de données 
+- The data file : GMS_20210621.hdf5
 
-**Installation** :  
+**Installation**:  
 **Windows** :  
-- Mettre le fichier de données dans le même répertoire que le script python "owniosocket.py" et exécuter le script  
-- Lancer un terminal de commande cmd (win + R et écrire cmd puis entrée) et aller dans le dossier à l'aide de la commande "cd path"  
-- Exécuter la commande "npm run notebookwin && npm install && npm install http-server"  
-L'installation est maintenant terminée et pour lancer la visualisation, il suffit d'exécuter la commande "npm run servewin" et d'aller à l'adresse "http://127.0.0.1:8080/" sur son naviguateur préféré. Il faut alors cliquer dans le coin supérieur-droit et cliquer sur "StartCo". Si tout est bon, la visualisation devrait apparaître après un peu de temps.  
-Par la suite, la commande "npm run notebookwin" permettra de mettre à jour le notebook.  
+- Put the data file in the same directory as the python script "owniosocket.py" and run the script  
+- Launch a cmd command terminal (win + R and write cmd then enter) and go to the folder with the "cd path" command  
+- Execute the command "npm run notebookwin && npm install && npm install http-server"  
+The installation is now complete and to launch the visualization, simply execute the command "npm run servewin" and go to the address "http://127.0.0.1:8080/" on your favorite browser. Then you have to click in the upper right corner and click on "StartCo". If everything is good, the visualization should appear after a little moment.  
+Afterwards, the command "npm run notebookwin" will allow you to update the notebook.  
 
-**Linux** :  
-- Mettre le fichier de données dans le même répertoire que le script python "owniosocket.py" et exécuter le script  
-- Lancer un terminal de commande et aller dans le dossier à l'aide de la commande "cd path"  
-- Exécuter la commande "npm run notebook && npm install  && npm install http-server"  
-L'installation est maintenant terminée et pour lancer la visualisation, il suffit d'exécuter la commande "npm run serve" et d'aller à l'adresse "http://127.0.0.1:8080/" sur son naviguateur préféré. Il faut alors cliquer dans le coin supérieur-droit et cliquer sur "StartCo". Si tout est bon, la visualisation devrait apparaître après un peu de temps.  
-Par la suite, la commande "npm run notebook" permettra de mettre à jour le notebook.  
+**Linux**:  
+- Put the data file in the same directory as the python script "owniosocket.py" and run the script  
+- Launch a command terminal and go to the folder with the command "cd path".  
+- Execute the command "npm run notebook && npm install && npm install http-server"  
+The installation is now complete and to start the visualization, just execute the command "npm run serve" and go to the address "http://127.0.0.1:8080/" on your favorite browser. Then you have to click in the upper right corner and click on "StartCo". If everything is good, the visualization should appear after a little moment.  
+Afterwards, the command "npm run notebook" will allow you to update the notebook.  
 
-**Fonctionnalités** :  
-Présentation des boutons et fonctionnalités :  
-*Color Scale* : permet de choisir l'échelle de couleur parmis ceux fournit par la librairie d3.  
-*Reverse* : Inverse l'échelle de couleur  
-*Dynamic Scale* : Active l'échelle de couleur dynamique pour les vues zoomés  
-*Width* : Modifie la largeur des canvas  
-*Période Zoom* :  permet de choisir la période de temps à visualiser   
-*HeightMultiplier* : permet de multiplier la hauteur des canvas par le facteur inscrit (étire le canvas donc une grosse multiplication entraîne la pixellisation des vues)  
-*Bouton Change* : Permet d’appliquer les changements de taille  
+**Features** :  
+Presentation of the buttons and functionalities:  
+*Color Scale* : allows to choose the color scale among those provided by the d3 library.  
+*Reverse* : Reverse the color scale  
+*Dynamic Scale* : Activate the dynamic color scale for zoomed views  
+*Width* : Modify the width of the canvas  
+*ZoomPeriod*: Allows you to choose the period of time to view   
+*HeightMultiplier* : allows to multiply the height of the canvas by the factor entered (stretches the canvas so a big multiplication leads to the pixelization of the views)  
+*ChangeButton*: Allows you to apply size changes  
 
-**Utilisation** :  
-- Cliquer dans le coin supérieur-droit pour ouvrir le menu des paramètres  
-- Cliquer dans le coin inférieu-droit pour ouvrir le menu des descriptions des points d'intêret  
-- "S" pour sauvegarder une position, "D" pour en supprimer une  
-- "Y" et "U" pour déplacer la zone de brushing de la vue du milieu  
-- "H" et "J" pour déplacer la zone de brushing de la vue du bas  
-- "I" pour forcer un rafraichissement des vues 2 et 3  
+**Use**:  
+- Click in the upper right corner to open the settings menu  
+- Click in the lower right corner to open the menu of descriptions of points of interest  
+- S" to save a position, "D" to delete a position  
+- Y" and "U" to move the brushing area of the middle view  
+- "H" and "J" to move the bottom view brushing area  
+- "I" to force a refresh of view 2 and 3  
