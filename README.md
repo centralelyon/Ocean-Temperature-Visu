@@ -1,7 +1,8 @@
 # OceanTVisu
-**Description**:
+**Description**:  
 This tool is an interactive visualization tool for large volumes of temporal data of temperature measured in deep waters around the world in order to analyze them on a computer or on a wall screen. 
-The visualization is composed of 3 different views representing the dataset at different scales of temporal zoom. One view presents the data as a surface with x-axis as time, y-axis as depth and intensity as temperatures. The intensity colors follow a color scale that can be changed in the application.
+The visualization is composed of 3 different views representing the dataset at different scales of temporal zoom. One view presents the data as a surface with x-axis as time, y-axis as depth and intensity as temperatures. The intensity colors follow a color scale that can be changed in the application.  
+
 **Prerequisite**:  
 - Python : https://www.python.org/downloads/
 - Several python modules to install (Flask,Flask-socketio,eventlet,...)
